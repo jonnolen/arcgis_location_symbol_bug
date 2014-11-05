@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		045C78AFAE9CEE1F62573DF1 /* libPods-ags_testTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3837769193334FA981D5BD1F /* libPods-ags_testTests.a */; };
+		ACD6A1041B6F623BCEF48C29 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44DE14D0210F36C51C1630B8 /* libPods.a */; };
+		FC191CF11A0A7D3200CDF573 /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC191CF01A0A7D3200CDF573 /* ArcGIS.bundle */; };
+		FC1BD5291A09930500C8D23A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1BD5281A09930500C8D23A /* main.m */; };
+		FC1BD52C1A09930500C8D23A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1BD52B1A09930500C8D23A /* AppDelegate.m */; };
+		FC1BD52F1A09930500C8D23A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1BD52E1A09930500C8D23A /* ViewController.m */; };
+		FC1BD5321A09930500C8D23A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FC1BD5311A09930500C8D23A /* Podfile */; };
+		FC1BD5341A09930500C8D23A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FC1BD5331A09930500C8D23A /* .gitignore */; };
+		FC1BD5361A09930500C8D23A /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = FC1BD5351A09930500C8D23A /* Gemfile */; };
+		FC1BD5381A09930500C8D23A /* .ruby-version in Resources */ = {isa = PBXBuildFile; fileRef = FC1BD5371A09930500C8D23A /* .ruby-version */; };
+		FC1BD53B1A09930500C8D23A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1BD5391A09930500C8D23A /* Main.storyboard */; };
+		FC1BD53D1A09930500C8D23A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC1BD53C1A09930500C8D23A /* Images.xcassets */; };
+		FC1BD5401A09930500C8D23A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC1BD53E1A09930500C8D23A /* LaunchScreen.xib */; };
+		FC1BD54C1A09930500C8D23A /* ags_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1BD54B1A09930500C8D23A /* ags_testTests.m */; };
+		FC1BD5571A0A535800C8D23A /* FSNavigationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1BD5561A0A535800C8D23A /* FSNavigationButton.m */; };
+		FC1BD5591A0A587A00C8D23A /* extent.json in Resources */ = {isa = PBXBuildFile; fileRef = FC1BD5581A0A587A00C8D23A /* extent.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC1BD5461A09930500C8D23A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC1BD51B1A09930500C8D23A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC1BD5221A09930500C8D23A;
+			remoteInfo = ags_test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28031CDE58DCD873D73CBF38 /* Pods-ags_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ags_testTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ags_testTests/Pods-ags_testTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3837769193334FA981D5BD1F /* libPods-ags_testTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ags_testTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ECC4CCFBB2D28B83D0177C1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3FE4B53B05DC0B0D6D70B629 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		44BFACBD45ECCDA3BC04EEA8 /* Pods-ags_testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ags_testTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ags_testTests/Pods-ags_testTests.release.xcconfig"; sourceTree = "<group>"; };
+		44DE14D0210F36C51C1630B8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC191CF01A0A7D3200CDF573 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArcGIS.bundle; path = "${HOME}/Library/SDKs/ArcGIS/iOS/ArcGIS.framework/Versions/Current/Resources/ArcGIS.bundle"; sourceTree = "<absolute>"; };
+		FC1BD5231A09930500C8D23A /* ags_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ags_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1BD5271A09930500C8D23A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC1BD5281A09930500C8D23A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC1BD52A1A09930500C8D23A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC1BD52B1A09930500C8D23A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC1BD52D1A09930500C8D23A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC1BD52E1A09930500C8D23A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC1BD5311A09930500C8D23A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		FC1BD5331A09930500C8D23A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
+		FC1BD5351A09930500C8D23A /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Gemfile; path = ../Gemfile; sourceTree = "<group>"; };
+		FC1BD5371A09930500C8D23A /* .ruby-version */ = {isa = PBXFileReference; lastKnownFileType = text; name = ".ruby-version"; path = "../.ruby-version"; sourceTree = "<group>"; };
+		FC1BD53A1A09930500C8D23A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC1BD53C1A09930500C8D23A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FC1BD53F1A09930500C8D23A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FC1BD5451A09930500C8D23A /* ags_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ags_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1BD54A1A09930500C8D23A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC1BD54B1A09930500C8D23A /* ags_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ags_testTests.m; sourceTree = "<group>"; };
+		FC1BD5551A0A535800C8D23A /* FSNavigationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNavigationButton.h; sourceTree = "<group>"; };
+		FC1BD5561A0A535800C8D23A /* FSNavigationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNavigationButton.m; sourceTree = "<group>"; };
+		FC1BD5581A0A587A00C8D23A /* extent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = extent.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC1BD5201A09930500C8D23A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACD6A1041B6F623BCEF48C29 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1BD5421A09930500C8D23A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045C78AFAE9CEE1F62573DF1 /* libPods-ags_testTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88FCAF60E31809B920B153F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC191CF01A0A7D3200CDF573 /* ArcGIS.bundle */,
+				44DE14D0210F36C51C1630B8 /* libPods.a */,
+				3837769193334FA981D5BD1F /* libPods-ags_testTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2FFA031A4EB4A309DCA7FCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FE4B53B05DC0B0D6D70B629 /* Pods.debug.xcconfig */,
+				3ECC4CCFBB2D28B83D0177C1 /* Pods.release.xcconfig */,
+				28031CDE58DCD873D73CBF38 /* Pods-ags_testTests.debug.xcconfig */,
+				44BFACBD45ECCDA3BC04EEA8 /* Pods-ags_testTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC1BD51A1A09930500C8D23A = {
+			isa = PBXGroup;
+			children = (
+				FC1BD5251A09930500C8D23A /* ags_test */,
+				FC1BD5481A09930500C8D23A /* ags_testTests */,
+				FC1BD5241A09930500C8D23A /* Products */,
+				E2FFA031A4EB4A309DCA7FCC /* Pods */,
+				88FCAF60E31809B920B153F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC1BD5241A09930500C8D23A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC1BD5231A09930500C8D23A /* ags_test.app */,
+				FC1BD5451A09930500C8D23A /* ags_testTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC1BD5251A09930500C8D23A /* ags_test */ = {
+			isa = PBXGroup;
+			children = (
+				FC1BD52A1A09930500C8D23A /* AppDelegate.h */,
+				FC1BD52B1A09930500C8D23A /* AppDelegate.m */,
+				FC1BD52D1A09930500C8D23A /* ViewController.h */,
+				FC1BD52E1A09930500C8D23A /* ViewController.m */,
+				FC1BD5551A0A535800C8D23A /* FSNavigationButton.h */,
+				FC1BD5561A0A535800C8D23A /* FSNavigationButton.m */,
+				FC1BD5391A09930500C8D23A /* Main.storyboard */,
+				FC1BD53C1A09930500C8D23A /* Images.xcassets */,
+				FC1BD53E1A09930500C8D23A /* LaunchScreen.xib */,
+				FC1BD5301A09930500C8D23A /* Environment Configuration */,
+				FC1BD5261A09930500C8D23A /* Supporting Files */,
+				FC1BD5581A0A587A00C8D23A /* extent.json */,
+			);
+			path = ags_test;
+			sourceTree = "<group>";
+		};
+		FC1BD5261A09930500C8D23A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC1BD5271A09930500C8D23A /* Info.plist */,
+				FC1BD5281A09930500C8D23A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC1BD5301A09930500C8D23A /* Environment Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				FC1BD5311A09930500C8D23A /* Podfile */,
+				FC1BD5331A09930500C8D23A /* .gitignore */,
+				FC1BD5351A09930500C8D23A /* Gemfile */,
+				FC1BD5371A09930500C8D23A /* .ruby-version */,
+			);
+			name = "Environment Configuration";
+			sourceTree = "<group>";
+		};
+		FC1BD5481A09930500C8D23A /* ags_testTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC1BD54B1A09930500C8D23A /* ags_testTests.m */,
+				FC1BD5491A09930500C8D23A /* Supporting Files */,
+			);
+			path = ags_testTests;
+			sourceTree = "<group>";
+		};
+		FC1BD5491A09930500C8D23A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC1BD54A1A09930500C8D23A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC1BD5221A09930500C8D23A /* ags_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC1BD54F1A09930500C8D23A /* Build configuration list for PBXNativeTarget "ags_test" */;
+			buildPhases = (
+				ABE6285DEBA3D9A0F7CB1AE8 /* Check Pods Manifest.lock */,
+				FC1BD51F1A09930500C8D23A /* Sources */,
+				FC1BD5201A09930500C8D23A /* Frameworks */,
+				FC1BD5211A09930500C8D23A /* Resources */,
+				2A9EFAFD8A6A1558F0B63DFE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ags_test;
+			productName = ags_test;
+			productReference = FC1BD5231A09930500C8D23A /* ags_test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC1BD5441A09930500C8D23A /* ags_testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC1BD5521A09930500C8D23A /* Build configuration list for PBXNativeTarget "ags_testTests" */;
+			buildPhases = (
+				795C14BD955987FE6A36FC7F /* Check Pods Manifest.lock */,
+				FC1BD5411A09930500C8D23A /* Sources */,
+				FC1BD5421A09930500C8D23A /* Frameworks */,
+				FC1BD5431A09930500C8D23A /* Resources */,
+				FD2DFF8F45E3EEA4CA01EE6F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC1BD5471A09930500C8D23A /* PBXTargetDependency */,
+			);
+			name = ags_testTests;
+			productName = ags_testTests;
+			productReference = FC1BD5451A09930500C8D23A /* ags_testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC1BD51B1A09930500C8D23A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = DT;
+				TargetAttributes = {
+					FC1BD5221A09930500C8D23A = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					FC1BD5441A09930500C8D23A = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = FC1BD5221A09930500C8D23A;
+					};
+				};
+			};
+			buildConfigurationList = FC1BD51E1A09930500C8D23A /* Build configuration list for PBXProject "ags_test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC1BD51A1A09930500C8D23A;
+			productRefGroup = FC1BD5241A09930500C8D23A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC1BD5221A09930500C8D23A /* ags_test */,
+				FC1BD5441A09930500C8D23A /* ags_testTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC1BD5211A09930500C8D23A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1BD5381A09930500C8D23A /* .ruby-version in Resources */,
+				FC1BD53B1A09930500C8D23A /* Main.storyboard in Resources */,
+				FC1BD5361A09930500C8D23A /* Gemfile in Resources */,
+				FC1BD5591A0A587A00C8D23A /* extent.json in Resources */,
+				FC1BD5401A09930500C8D23A /* LaunchScreen.xib in Resources */,
+				FC1BD53D1A09930500C8D23A /* Images.xcassets in Resources */,
+				FC191CF11A0A7D3200CDF573 /* ArcGIS.bundle in Resources */,
+				FC1BD5341A09930500C8D23A /* .gitignore in Resources */,
+				FC1BD5321A09930500C8D23A /* Podfile in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1BD5431A09930500C8D23A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A9EFAFD8A6A1558F0B63DFE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		795C14BD955987FE6A36FC7F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ABE6285DEBA3D9A0F7CB1AE8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD2DFF8F45E3EEA4CA01EE6F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ags_testTests/Pods-ags_testTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC1BD51F1A09930500C8D23A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1BD5571A0A535800C8D23A /* FSNavigationButton.m in Sources */,
+				FC1BD52F1A09930500C8D23A /* ViewController.m in Sources */,
+				FC1BD52C1A09930500C8D23A /* AppDelegate.m in Sources */,
+				FC1BD5291A09930500C8D23A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1BD5411A09930500C8D23A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1BD54C1A09930500C8D23A /* ags_testTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC1BD5471A09930500C8D23A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC1BD5221A09930500C8D23A /* ags_test */;
+			targetProxy = FC1BD5461A09930500C8D23A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC1BD5391A09930500C8D23A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC1BD53A1A09930500C8D23A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC1BD53E1A09930500C8D23A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC1BD53F1A09930500C8D23A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC1BD54D1A09930500C8D23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		FC1BD54E1A09930500C8D23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC1BD5501A09930500C8D23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FE4B53B05DC0B0D6D70B629 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/SDKs/ArcGIS/iOS/**",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ags_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"Pods-MRCEnumerable\"",
+					"-l\"Pods-ReactiveCocoa\"",
+					"$(inherited)",
+					"-l",
+					"c++",
+					"-framework",
+					ArcGIS,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC1BD5511A09930500C8D23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ECC4CCFBB2D28B83D0177C1 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/SDKs/ArcGIS/iOS/**",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ags_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"Pods-MRCEnumerable\"",
+					"-l\"Pods-ReactiveCocoa\"",
+					"$(inherited)",
+					"-l",
+					"c++",
+					"-framework",
+					ArcGIS,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FC1BD5531A09930500C8D23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28031CDE58DCD873D73CBF38 /* Pods-ags_testTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ags_testTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ags_test.app/ags_test";
+			};
+			name = Debug;
+		};
+		FC1BD5541A09930500C8D23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44BFACBD45ECCDA3BC04EEA8 /* Pods-ags_testTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ags_testTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ags_test.app/ags_test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC1BD51E1A09930500C8D23A /* Build configuration list for PBXProject "ags_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1BD54D1A09930500C8D23A /* Debug */,
+				FC1BD54E1A09930500C8D23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC1BD54F1A09930500C8D23A /* Build configuration list for PBXNativeTarget "ags_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1BD5501A09930500C8D23A /* Debug */,
+				FC1BD5511A09930500C8D23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC1BD5521A09930500C8D23A /* Build configuration list for PBXNativeTarget "ags_testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1BD5531A09930500C8D23A /* Debug */,
+				FC1BD5541A09930500C8D23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC1BD51B1A09930500C8D23A /* Project object */;
+}

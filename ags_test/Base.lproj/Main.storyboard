@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3S-tf-8JJ" customClass="AGSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfa-bV-VrS">
+                                        <rect key="frame" x="502" y="562" width="90" height="30"/>
+                                        <state key="normal" title="Release Map">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="releaseMap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zUL-Ts-tgH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSo-dL-WpJ">
+                                        <rect key="frame" x="536" y="524" width="56" height="30"/>
+                                        <state key="normal" title="Init Map">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="initMap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DPw-4P-OId"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPP-7o-A1E" customClass="FSNavigationButton">
+                                        <rect key="frame" x="8" y="562" width="78" height="30"/>
+                                        <state key="normal" title="turn nav on">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="locationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Dc-sM-yql"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="sfa-bV-VrS" secondAttribute="bottom" constant="8" id="0W8-qG-QNs"/>
+                                    <constraint firstItem="sfa-bV-VrS" firstAttribute="top" secondItem="tSo-dL-WpJ" secondAttribute="bottom" constant="8" symbolic="YES" id="999-3b-b0f"/>
+                                    <constraint firstItem="sfa-bV-VrS" firstAttribute="trailing" secondItem="tSo-dL-WpJ" secondAttribute="trailing" id="BXv-H3-dLc"/>
+                                    <constraint firstItem="UPP-7o-A1E" firstAttribute="leading" secondItem="D3S-tf-8JJ" secondAttribute="leading" constant="8" id="Uxl-LN-ZCM"/>
+                                    <constraint firstAttribute="trailing" secondItem="sfa-bV-VrS" secondAttribute="trailing" constant="8" id="gBQ-Uv-8Yp"/>
+                                    <constraint firstAttribute="bottom" secondItem="UPP-7o-A1E" secondAttribute="bottom" constant="8" id="x8R-MO-n4R"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="D3S-tf-8JJ" secondAttribute="trailing" id="B0J-KJ-8TW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D3S-tf-8JJ" secondAttribute="bottom" id="GxO-9m-CPN"/>
+                            <constraint firstItem="D3S-tf-8JJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Mzc-m5-9jZ"/>
+                            <constraint firstItem="D3S-tf-8JJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PdF-NJ-bGh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="D3S-tf-8JJ" id="IwM-Ir-xGB"/>
+                        <outlet property="navigationButton" destination="UPP-7o-A1E" id="FHF-Ga-McV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
